@@ -18,7 +18,8 @@ ADDR_PRESENT_POSITION       = 132
 LEN_PRESENT_POSITION        = 4         # Data Byte Length
 DXL_MINIMUM_POSITION_VALUE  = 0         # Refer to the Minimum Position Limit of product eManual
 DXL_MAXIMUM_POSITION_VALUE  = 4095      # Refer to the Maximum Position Limit of product eManual
-BAUDRATE                    = 3000000
+# BAUDRATE                    = 3000000
+BAUDRATE                    = 57600
 
 # DYNAMIXEL Protocol Version 2.0
 # https://emanual.robotis.com/docs/en/dxl/protocol2/
@@ -29,7 +30,7 @@ DXL_ID                     = [0, 1, 2, 3, 4]                 # Dynamixe ID
 
 # Use the actual port assigned to the U2D2.
 # ex) Windows: "COM*", Linux: "/dev/ttyUSB*", Mac: "/dev/tty.usbserial-*"
-DEVICENAME                  = '/dev/ttyUSB0'
+DEVICENAME                  = "COM15"
 # DEVICENAME                  = '/dev/tty.usbserial-FT88YRMM'
 
 # DEFAULT_POS_SCALE = 2.0 * np.pi / 4096  # 0.088 degrees per unit

@@ -8,7 +8,8 @@ import serial
 import numpy as np
 
 # Configure your UART port and baud rate
-uart_port = "/dev/ttyACM0"  # Main board UART port
+# uart_port = "/dev/ttyACM0"  # Main board UART port
+uart_port = "COM14"  # Main board UART port
 # uart_port = "/dev/tty.usbmodem57340031741"  # Main board UART port
 baud_rate = 921600  # Main board baud rate
 
@@ -294,7 +295,7 @@ if __name__ == "__main__":
 
         # Keep the main thread alive
         while True:
-            time.sleep(1)
+            time.sleep(10000)
 
     except KeyboardInterrupt:
         print("Program interrupted by user")
