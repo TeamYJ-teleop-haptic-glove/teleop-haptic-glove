@@ -7,5 +7,5 @@
 
 - 数据接收：Data_DXL.py，Data_MCU.py
 - 数据处理：Recieve_ALL.py
-- FK+ID运算：IK.py
+- FK+IK运算：IK.py
 
